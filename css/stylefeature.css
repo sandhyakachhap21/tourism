@@ -322,7 +322,7 @@ header .fa-bars{
   .home{
     flex-flow: column;
     padding:1.5rem;
-    height:70vh;
+    height:80vh;
   }
 
   .home .content{
