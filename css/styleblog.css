@@ -108,54 +108,134 @@ header .fa-bars{
   z-index: -1;
 }
 
-.about{
-    min-height:100%;
-  }
+
   
-  .about .row{
+
+  /*******************************/
+/*********** Blog CSS **********/
+/*******************************/
+.blog {
+    position: relative;
+    width: 100%;
+    padding: 45px 0 0 0;
+}
+
+.blog .blog-item {
+    position: relative;
+}
+
+.blog .blog-img {
+    position: relative;
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.blog .blog-img img {
+    width: 100%;
+}
+
+.blog .blog-content {
+    position: relative;
+    width: calc(100% - 60px);
+    top: -60px;
+    left: 30px;
+    padding: 25px 30px 30px 30px;
+    background: #ffffff;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .08);
+    border-radius: 15px;
+    z-index: 2;
+}
+
+.blog .blog-content h2.blog-title {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.blog .blog-meta {
+    position: relative;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width:90%;
-    margin:0 auto;
-  }
-  
-  .about .row .image img{
-    height:65vh;
-    width: 50vw;
-  }
-  
-  .about .row .content h3{
-    font-size: 4rem;
-    color:#0098a1;
-  }
-  
-  .about .row .content p{
-    font-size: 1.9rem;
-    color:#333;
-  }
-  
-  .about .row .content .btn{
-    outline: none;
-    border:none;
-    cursor: pointer;
-    transition: .2s linear;
-    height:4rem;
-    width:18rem;
-    margin-top: 1rem;
-    color:#fff;
-    background: #0098a1;
-    font-size: 2rem;
-  }
-  
-  .about .row .content .btn1,
-  .about .row .content .btn:hover{
-    background: none;
-    color:#0098a1;
-    border:.2rem solid #0098a1;
-    margin-right: 1rem;
-  }
-  
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.blog .blog-meta p {
+    margin: 0 10px 0 0;
+    font-size: 14px;
+    color: #999999;
+}
+
+.blog .blog-meta i {
+    color: #fbaf32;
+    margin-right: 5px;
+}
+
+.blog .blog-meta p:last-child {
+    margin: 0;
+}
+
+.blog .blog-text {
+    position: relative;
+}
+
+.blog .blog-text p {
+    margin-bottom: 10px;
+}
+
+.blog .blog-item a.btn {
+    margin-top: 10px;
+    padding: 5px 15px;
+}
+
+
+
+.blog .blog-item .btn{
+    background:#fbaf32;
+    font-size: 20px;
+}
+
+.blog .blog-item .btn:hover{
+    border:1px solid #fbaf32;
+    background: #ffffff;
+}
+.blog .pagination .page-link {
+    color: #fbaf32;
+    border-radius: 5px;
+    border-color: #fbaf32;
+    margin: 0 2px;
+}
+
+.blog .pagination .page-link:hover,
+.blog .pagination .page-item.active .page-link {
+    color: #ffffff;
+    background: #fbaf32;
+}
+
+.blog .pagination .disabled .page-link {
+    color: #999999;
+}
+
+.blog .container .section-header h1{
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+
+
+}
+
+.blog .container .section-header h2{
+    text-align: center;
+    font-size: 20x;
+}
+@media(max-width: 575.98px){
+    .blog .blog-meta p {
+        flex: 50%;
+        font-size: 13px;
+        margin: 0 0 5px 0;
+    }
+}
+
   .newsletter{
     padding:2rem;
     background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)), url(../images/beach.jpg) no-repeat;
